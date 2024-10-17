@@ -1,0 +1,257 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #0D47A1;
+    --cor-de-fundo: #001529;
+    --fonte-principal: 'Inter', sans-serif;
+    --botao-azul-efeito: #1565C0;
+    --destaque-amarelo: #FFEB3B;
+    --cor-ativa: #4CAF50;
+    --texto-escuro: #212121;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+    background-color: var(--botao-azul);
+}
+
+header img {
+    height: 50px;
+}
+
+.menu a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 2em;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: var(--destaque-amarelo);
+}
+
+.principal {
+    background-image: url("img/fundo_loja.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container__caixa {
+    max-width: 600px;
+    margin: auto;
+    padding: 2em;
+}
+
+.container__titulo {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.container__texto {
+    font-size: 18px;
+    margin-bottom: 1.5em;
+    color: var(--cinza-secundario);
+}
+
+.container__imagem {
+    width: 80%;
+    margin: 1em 0;
+    border-radius: 10px;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1em;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--destaque-amarelo);
+}
+
+.produtos {
+    background-color: var(--texto-escuro);
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.produtos__titulo {
+    font-size: 36px;
+    margin-bottom: 2em;
+}
+
+.produtos__lista {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.produto {
+    background-color: var(--branco-principal);
+    border-radius: 10px;
+    padding: 2em;
+    max-width: 300px;
+    text-align: center;
+}
+
+.produto__imagem {
+    width: 80%;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.produto__nome {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--texto-escuro);
+    margin-bottom: 0.5em;
+}
+
+.produto__preco {
+    font-size: 18px;
+    color: var(--cor-ativa);
+    margin-bottom: 1em;
+}
+
+.produto__botao {
+    background-color: var(--botao-azul);
+    border: none;
+    color: var(--branco-principal);
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.produto__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    padding: 4em 2em;
+}
+
+.sobre__imagem {
+    width: 40%;
+    border-radius: 20px;
+    margin-right: 2em;
+}
+
+.sobre__titulo {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.sobre__texto {
+    font-size: 18px;
+    color: var(--cinza-secundario);
+}
+
+.contato {
+    background-color: var(--cor-ativa);
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.contato__titulo {
+    font-size: 32px;
+    margin-bottom: 1em;
+    color: var(--branco-principal);
+}
+
+.contato__formulario {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.formulario__campo {
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.formulario__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.formulario__botao:hover {
+    background-color: var(--botao-azul-efeito);
+}
+
+.rodape {
+    background-color: var(--texto-escuro);
+    color: var(--cinza-secundario);
+    padding: 2em;
+    text-align: center;
+}
+
+.rodape__logo {
+    height: 40px;
+    margin-bottom: 1em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.rodape__lista a {
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.rodape__lista a:hover {
+    color: var(--destaque-amarelo);
+}
+
+.rodape__texto {
+    font-size: 14px;
+}
